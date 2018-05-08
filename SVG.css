@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    background-color:dimgray;
+}
+.first{
+    width:50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+g path:first-child{
+    fill:#00AEF0;
+    stroke-dasharray:1085;
+    opacity: 10;
+    animation: letter-one 3s; 
+}
+g path:nth-child(2){
+    fill:#00AEF0;
+    stroke-dasharray:815;
+    opacity: 10;
+    animation: letter-two 3s;  
+}
+@keyframes letter-one{
+    0%{
+        opacity:0;
+        fill:none;
+        stroke-dashoffset:1085;
+    }
+    30%{
+        opacity:10;
+        fill:none;
+        stroke-dashoffset:1085;
+    }
+    80%{
+        fill:rgba(0, 174, 240, 0)
+    }
+    100%{
+        opacity:10;
+        fill:rgba(0, 174, 240, 1);
+        stroke-dashoffset:0;
+    }
+}
+@keyframes letter-two{
+    0%{
+        opacity:0;
+        fill:none;
+        stroke-dashoffset:815;
+    }
+    30%{
+        opacity:10;
+        fill:none;
+        stroke-dashoffset:815;
+    }
+    80%{
+        fill:rgba(0, 174, 240, 0);
+    }
+    100%{
+        opacity:10;
+        fill:rgba(0, 174, 240, 1);
+        stroke-dashoffset:0;
+    }
+}
